@@ -151,5 +151,5 @@ document.querySelector("#add-btn").onclick = function () {
 
 document.querySelector("#sub-btn").onclick = function () {
   sendTransaction(false);
-  alert("Expense added!")
+  async( alert("Expense added!"))
 };
