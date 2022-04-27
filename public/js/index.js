@@ -142,6 +142,7 @@ function sendTransaction(isAdding) {
     .catch(err => {
       // fetch failed, so save in indexed db
       saveRecord(transaction);
+      console.log("Failed post saved to IndexedDB!")
 
       // clear form
       nameEl.value = "";
